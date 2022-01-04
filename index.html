@@ -1,47 +1,86 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,400&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <title>Oh My Food</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d21317d11a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-     <head>
-         <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-         <link rel="preconnect" href="https://fonts.googleapis.com">
-         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,400&family=Shrikhand&display=swap" rel="stylesheet">
-         <title>Oh My Food</title>
-         <link rel="stylesheet" href="style.css">
-         <script src="https://kit.fontawesome.com/d21317d11a.js" crossorigin="anonymous"></script>
-     </head>
-
-<body>
+  <body>
     <header>
-        <h1>
-            ohmyfood
-        </h1>
+      <h1>ohmyfood</h1>
     </header>
 
     <main>
-		<div class="ville">
-			<i class="fas fa-map-marker-alt"></i>
-			<h2> Paris, Belleville </h2>
-		</div>
+      <div class="ville">
+        <i class="fas fa-map-marker-alt"></i>
+        <h2>Paris, Belleville</h2>
+      </div>
 
+      <section class="selection">
+        <h2>
+          Réservez le menu qui <br />
+          vous convient
+        </h2>
+        <p>
+          Découvrez des restaurants d'exception,<br />séléctionnés par nos soins
+        </p>
+        <button>Explorer nos restaurants</button>
+      </section>
 
-        <section class="selection">
-        	<h2>Réservez le menu qui </br> vous convient</h2>
-        	<p>Découvrez des restaurants d'exception,</br>séléctionnés par nos soins </p>
-        	<button> Explorer nos restaurants </button>
-        </section>
-        
-		<section class="instructions">
-			<h2>Fonctionnement</h2>
-			<ol>
-				<li><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
-				<li><i class="fas fa-list-ul"></i>Composez votre menu </li>
-				<li><i class="fas fa-store"></i>Dégustez au restaurant</li>
-			</ol>
+      <section class="instructions">
+        <h2>Fonctionnement</h2>
+        <ol>
+          <li><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
+          <li><i class="fas fa-list-ul"></i>Composez votre menu</li>
+          <li><i class="fas fa-store"></i>Dégustez au restaurant</li>
+        </ol>
+      </section>
 
-		</section>
+      <section class="restaurants">
+        <h2>Restaurants</h2>
 
-	</main>
-</body>
+        <div class="restaurants_cards">
+          <a href="#" class="card">
+            <div class="images">
+              <img src="restaurants/palette.jpg" alt="resto palette" />
+            </div>
+            <div class="description"></div>
+          </a>
+
+          <a href="#" class="card">
+            <div class="images">
+              <img src="restaurants/enchantee.jpg" alt="resto enchantee" />
+            </div>
+            <div class="description"></div>
+          </a>
+
+          <a href="#" class="card">
+            <div class="images">
+              <img src="restaurants/francaise.jpg" alt="resto francaise" />
+            </div>
+            <div class="description"></div>
+          </a>
+
+          <a href="#" class="card">
+            <div class="images">
+              <img src="restaurants/sens.jpg" alt="resto sens" />
+            </div>
+            <div class="description"></div>
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

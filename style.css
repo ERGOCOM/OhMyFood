@@ -1,80 +1,173 @@
+header {
+  box-shadow: 0px 5px 6px lightgrey;
+  padding: 3px;
+}
 
 h1 {
-    font-family: "Shrikhand", cursive;
-    text-align: center;
-    
+  font-family: "Shrikhand", cursive;
+  text-align: center;
 }
-header {
-    box-shadow: 0px 5px 6px lightgrey;
-    padding: 3px;
+
+.ville {
+  background-color: #ececec;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.ville h2 {
+  text-align: center;
+  font-size: 18px;
+}
+.ville i {
+  font-size: 15px;
+}
+
+.selection {
+  text-align: center;
+  background-color: whitesmoke;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.selection h2 {
+  font-size: 20px;
+  margin-top: 0px;
+}
+.selection button {
+  color: white;
+  font-size: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  box-shadow: 0px 5px 6px -3px #7e7e7e;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
 }
 
 .instructions ol {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.instructions ol li {
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 2px 20px;
+  box-shadow: 0px 5px 6px lightgrey;
+}
+.instructions ol i {
+  margin-right: 6px;
+  color: gray;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.restaurants {
+  background-color: whitesmoke;
+}
+.restaurants .restaurants_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.restaurants .card {
+  border: 3px solid black;
+  height: 20px;
+}
+.restaurants .images {
+  height: 150px;
+  width: 200px;
+}
+.restaurants .images img {
+  max-width: 100%;
+}
+
+header {
+  box-shadow: 0px 5px 6px lightgrey;
+  padding: 3px;
+}
+
+.ville {
+  background-color: #ececec;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ville i {
+  font-size: 15px;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+}
+
+.instructions ol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .instructions li {
-    background-color: #f2f2f2;
-    padding: 10px 20px;
-    border-radius: 10px;
-    margin: 2px 20px;
-    box-shadow: 0px 5px 6px lightgrey;
-  }
-  .instructions i {
-    margin-right: 2px;
-  }
-  
-  #logo {
-    display: block;
-    margin: auto;
-    height: 45px;
-  }
-  
-  
-  body {
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-  }
-  
-  h2 {
-    text-align: center;
-    font-size: 18px;
-  }
-  
-  main .ville {
-    background-color: #ececec;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .ville i {
-    font-size: 15px;
-  }
-  
-  .selection {
-    text-align: center;
-    background-color: whitesmoke;
-    padding-bottom: 10px;
-    padding-top: 10px;
-  }
-  
-  .selection h2 {
-    font-size: 20px;
-    margin-top: 0px;
-  }
-  
-  .selection button {
-    color: white;
-    font-size: 15px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    margin-top: 10px;
-    box-shadow: 0px 5px 6px -3px #7e7e7e;
-    background-image: linear-gradient(to top, #9356DC, #FF79DA);
-  }
-  
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 2px 20px;
+  box-shadow: 0px 5px 6px lightgrey;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: 18px;
+}
+
+.ville {
+  background-color: #ececec;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ville i {
+  font-size: 15px;
+}
+
+.selection {
+  text-align: center;
+  background-color: whitesmoke;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.selection h2 {
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+.selection button {
+  color: white;
+  font-size: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  box-shadow: 0px 5px 6px -3px #7e7e7e;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+}
+
+/*# sourceMappingURL=style.css.map */
