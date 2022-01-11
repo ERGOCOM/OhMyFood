@@ -1,9 +1,11 @@
-@import './sass/header.scss';
-@import './sass/ville.scss';
-@import './sass/selection.scss';
-@import './sass/instructions.scss';
-@import './sass/body.scss';
-@import './sass/restaurants.scss';
+@import "./sass/header.scss";
+@import "./sass/ville.scss";
+@import "./sass/selection.scss";
+@import "./sass/instructions.scss";
+@import "./sass/body.scss";
+@import "./sass/restaurants.scss";
+@import "./sass/footer.scss";
+@import "./sass/resto1.scss";
 
 header {
   box-shadow: 0px 5px 6px lightgrey;
@@ -27,7 +29,6 @@ h1 {
   text-align: center;
 }
 
-
 .instructions ol {
   display: flex;
   flex-direction: column;
@@ -41,8 +42,6 @@ h1 {
   margin: 2px 20px;
   box-shadow: 0px 5px 6px lightgrey;
 }
-
-
 
 body {
   margin: 0;
@@ -84,5 +83,5 @@ h2 {
   border-radius: 20px;
   margin-top: 10px;
   box-shadow: 0px 5px 6px -3px #7e7e7e;
-  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
 }

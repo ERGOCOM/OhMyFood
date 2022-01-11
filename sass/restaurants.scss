@@ -1,21 +1,47 @@
 .restaurants {
   background-color: whitesmoke;
+  margin: 30px;
 
   .restaurants_cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
+    gap: 40px;
   }
 
   .card {
-    border: 3px solid black;
-    height: 20px;
+    height: 60%;
   }
   .images {
     img {
-      max-width: 100%;
+      height: 150px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 20px 20px 0 0;
+      margin-bottom: 0px;
     }
-    height: 150px;
-    width: 200px;
+
+    width: 450px;
+  }
+
+  .description {
+    position: relative;
+    background-color: white;
+    h3 {
+      color: black;
+      margin-bottom: 0px;
+      margin-top: -5px;
+    }
+    p {
+      color: gray;
+      margin-top: 0px;
+      padding: 3px;
+    }
+    i {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      font-size: 20px;
+    }
   }
 }
