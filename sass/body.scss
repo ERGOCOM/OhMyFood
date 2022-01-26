@@ -2,3 +2,38 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
+a {
+  text-decoration: none;
+}
+.loader {
+  background-color: whitesmoke;
+  display: grid;
+  place-items: center;
+  opacity: 0.9;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  animation: blanc 200ms 4s forwards;
+  transform-origin: top;
+  i {
+    animation: rotation 4s infinite linear;
+    font-size: 60px;
+    color: purple;
+  }
+}
+
+@keyframes blanc {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes rotation {
+  to {
+    transform: rotate(360deg);
+  }
+}
