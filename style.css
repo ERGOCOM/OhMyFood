@@ -45,19 +45,43 @@ h1 {
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
 }
 
+.instructions {
+  counter-reset: numero;
+}
 .instructions ol {
   display: flex;
-  flex-direction: column;
   gap: 10px;
 }
-.instructions ol li {
+@media (max-width: 1000px) {
+  .instructions ol {
+    flex-direction: column;
+  }
+}
+
+li {
+  position: relative;
+  list-style-type: none;
   background-color: #f2f2f2;
   padding: 10px 20px;
   border-radius: 10px;
   margin: 2px 20px;
   box-shadow: 0px 5px 6px lightgrey;
 }
-.instructions ol i {
+li::before {
+  content: counter(numero);
+  counter-increment: numero;
+  background-color: #9356dc;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  left: -7px;
+}
+
+i {
   margin-right: 6px;
   color: gray;
 }
