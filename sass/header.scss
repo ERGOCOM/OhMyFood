@@ -1,5 +1,7 @@
+@import "../utils/boxshadow.scss";
+
 header {
-  box-shadow: 0px 5px 6px lightgrey;
+  @include shadow;
   padding: 3px;
 }
 

@@ -80,6 +80,9 @@ li::before {
   position: absolute;
   left: -7px;
 }
+li:hover {
+  transform: scale(1.02);
+}
 
 i {
   margin-right: 6px;
@@ -192,7 +195,13 @@ a {
   transition: all 200ms;
 }
 .restaurants .description:hover .fas {
-  opacity: 3;
+  opacity: 1;
+}
+.restaurants .btn-check {
+  display: none;
+}
+.restaurants .btn-check:checked ~ label .fas {
+  opacity: 1;
 }
 
 footer {
@@ -206,6 +215,14 @@ footer h2 {
   text-align: left;
 }
 
+@keyframes checkrot {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 img {
   display: block;
   width: 100%;
@@ -283,9 +300,7 @@ img {
   width: 20px;
   border-radius: 20px;
   color: green;
-}
-.menus:hover {
-  cursor: pointer;
+  animation: checkrot 2s ease;
 }
 .menus:hover .menu-item__check {
   margin-right: 0;
