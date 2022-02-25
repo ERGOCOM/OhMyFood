@@ -181,27 +181,27 @@ a {
   margin-top: 0px;
   padding: 3px;
 }
-.restaurants .description i {
+.restaurants .description .form-check i {
   position: absolute;
   right: 20px;
   top: 10px;
-  font-size: 20px;
+  font-size: 25px;
 }
-.restaurants .description .fas {
+.restaurants .description .form-check .fas {
   color: transparent;
-  background-image: linear-gradient(to top, #9356dc, #ff79da);
   background-clip: text;
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
   -webkit-background-clip: text;
   opacity: 0;
   transition: all 200ms;
 }
-.restaurants .description:hover .fas {
+.restaurants .description .form-check .fas:hover.fas {
   opacity: 1;
 }
-.restaurants .btn-check {
+.restaurants .description .form-check .btn-check {
   display: none;
 }
-.restaurants .btn-check:checked ~ label .fas {
+.restaurants .description .form-check .btn-check:checked ~ label .fas {
   opacity: 1;
 }
 
@@ -229,6 +229,8 @@ main h2 {
   font-weight: 400;
   position: relative;
   height: 27px;
+  background-color: white;
+  border-radius: 10px 10px 0 0;
 }
 
 .coeur {
@@ -238,12 +240,12 @@ main h2 {
   position: absolute;
   right: 20px;
   top: 10px;
-  font-size: 40px;
+  font-size: 25px;
 }
 .coeur .fas {
   color: transparent;
-  background-image: linear-gradient(to top, #9356dc, #ff79da);
   background-clip: text;
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
   -webkit-background-clip: text;
   opacity: 0;
   transition: all 200ms;
@@ -272,6 +274,15 @@ main h2 {
   width: 30px;
   color: gray;
 }
+.menus h3::after {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 0;
+  height: 3px;
+  width: 40px;
+  background-color: green;
+}
 .menus .menus__plats {
   overflow: hidden;
 }
@@ -283,6 +294,7 @@ main h2 {
   margin: 8px;
   animation: apparition 2s;
   animation-fill-mode: both;
+  box-shadow: 0px 5px 6px -3px #7e7e7e;
 }
 .menus .menu-item:nth-child(1) {
   animation-delay: 200ms;
@@ -299,6 +311,14 @@ main h2 {
   padding: 10px;
   display: flex;
   align-items: flex-end;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 .menus .menu-item__description {
   padding: 0px;
@@ -328,11 +348,19 @@ main h2 {
   border-radius: 20px;
   color: green;
 }
-.menus:hover {
-  cursor: pointer;
-}
 .menus:hover .menu-item__check {
   margin-right: 0;
+}
+.menus i {
+  animation: spin 1.5s ease-in;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 @keyframes apparition {
   0% {
@@ -343,6 +371,20 @@ main h2 {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+.order button {
+  color: white;
+  font-size: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  box-shadow: 0px 5px 6px -3px #7e7e7e;
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
+  margin-bottom: 15px;
+  margin-left: 45%;
+  box-shadow: 0px 5px 6px -3px #7e7e7e;
 }
 
 header {

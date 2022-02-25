@@ -53,30 +53,8 @@
       margin-top: 0px;
       padding: 3px;
     }
-    i {
-      position: absolute;
-      right: 20px;
-      top: 10px;
-      font-size: 20px;
-    }
-    .fas {
-      color: transparent;
-      @include mixins.gradient;
-      background-clip: text;
-      -webkit-background-clip: text;
-      opacity: 0;
-      transition: all 200ms;
-    }
-    &:hover .fas {
-      opacity: 1;
-    }
-  }
-  .btn-check {
-    display: none;
-    &:checked ~ label {
-      .fas {
-        opacity: 1;
-      }
+    .form-check {
+      @include mixins.heart;
     }
   }
 }
