@@ -1,3 +1,5 @@
+@use "../utils/mixins.scss";
+
 .restaurants {
   background-color: whitesmoke;
   margin: 30px;
@@ -59,7 +61,7 @@
     }
     .fas {
       color: transparent;
-      background-image: linear-gradient(to top, #9356dc, #ff79da);
+      @include mixins.gradient;
       background-clip: text;
       -webkit-background-clip: text;
       opacity: 0;

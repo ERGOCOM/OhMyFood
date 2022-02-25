@@ -1,9 +1,10 @@
-@import "../utils/zoom.scss";
+@use "../utils/mixins.scss";
 
 .instructions {
   counter-reset: numero;
   ol {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     @media (max-width: 1000px) {
       flex-direction: column;
@@ -30,9 +31,9 @@ li {
   padding: 10px 20px;
   border-radius: 10px;
   margin: 2px 20px;
-  @include shadow;
+  @include mixins.shadow-1;
   &:hover {
-    @include zoom;
+    @include mixins.zoom;
   }
 }
 

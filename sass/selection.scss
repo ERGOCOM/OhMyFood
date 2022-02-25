@@ -1,8 +1,10 @@
+@use "../utils/mixins.scss";
+
 .selection {
-    text-align: center;
-    background-color: whitesmoke;
-    padding-bottom: 10px;
-    padding-top: 10px;
+  text-align: center;
+  background-color: whitesmoke;
+  padding-bottom: 10px;
+  padding-top: 10px;
   h2 {
     font-size: 20px;
     margin-top: 0px;
@@ -14,8 +16,7 @@
     border: none;
     border-radius: 20px;
     margin-top: 10px;
-    box-shadow: 0px 5px 6px -3px #7e7e7e;
-    background-image: linear-gradient(to top, #9356DC, #FF79DA);
+    @include mixins.shadow-1;
+    @include mixins.gradient;
   }
 }
-  

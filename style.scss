@@ -1,11 +1,11 @@
-@import "./sass/header.scss";
-@import "./sass/ville.scss";
-@import "./sass/selection.scss";
-@import "./sass/instructions.scss";
-@import "./sass/body.scss";
-@import "./sass/restaurants.scss";
-@import "./sass/footer.scss";
-@import "./sass/resto1.scss";
+@use "./sass/header.scss";
+@use "./sass/ville.scss";
+@use "./sass/selection.scss";
+@use "./sass/instructions.scss";
+@use "./sass/body.scss";
+@use "./sass/restaurants.scss";
+@use "./sass/footer.scss";
+@use "./sass/resto1.scss";
 
 header {
   box-shadow: 0px 5px 6px lightgrey;
