@@ -27,6 +27,9 @@
 
   .card {
     height: 60%;
+    &:hover {
+      @include mixins.zoom;
+    }
   }
   .images {
     img {

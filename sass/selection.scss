@@ -11,5 +11,8 @@
   }
   button {
     @include mixins.btn;
+    &:hover {
+      @include mixins.zoom;
+    }
   }
 }
