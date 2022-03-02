@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -19,7 +20,7 @@ a {
   i {
     animation: rotation 4s infinite linear;
     font-size: 60px;
-    color: purple;
+    color: #9356dc;
   }
 }
 

@@ -96,6 +96,7 @@ i {
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -117,7 +118,7 @@ a {
 .loader i {
   animation: rotation 4s infinite linear;
   font-size: 60px;
-  color: purple;
+  color: #9356dc;
 }
 
 @keyframes blanc {
@@ -230,6 +231,27 @@ img {
   object-position: center;
 }
 
+header {
+  position: relative;
+}
+
+h1 {
+  color: #000;
+}
+
+.header__arrow {
+  position: absolute;
+  left: 20px;
+  height: 20px;
+  width: 20px;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #000;
+}
+
 .nom h2 {
   font-family: "Shrikhand";
   font-weight: 400;
@@ -287,7 +309,7 @@ img {
   left: 0;
   height: 3px;
   width: 40px;
-  background-color: green;
+  background-color: #99e2d0;
 }
 .menus .menus__plats {
   overflow: hidden;
@@ -334,21 +356,23 @@ img {
 }
 .menus .menu-item__description {
   padding: 0px;
+  margin-left: 10px;
   overflow: hidden;
 }
 .menus .menu-item__description h4,
 .menus .menu-item__description p {
   overflow: hidden;
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menus .menu-item__check {
   display: grid;
   place-items: center;
   flex-shrink: 0;
   border-radius: 0 10px 10px 0;
-  background-color: green;
-  margin-right: -4rem;
-  width: 4rem;
+  background-color: #99e2d0;
+  margin-right: -40px;
+  width: 40px;
   transition: margin-right 0.5s;
 }
 .menus .menu-item__check i {
@@ -358,12 +382,15 @@ img {
   height: 20px;
   width: 20px;
   border-radius: 20px;
-  color: green;
+  color: #99e2d0;
 }
 
 .order button {
   margin-bottom: 15px;
-  margin-left: 45%;
+  display: flex;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 0px 5px 6px -3px #7e7e7e;
   color: white;
   font-size: 15px;
