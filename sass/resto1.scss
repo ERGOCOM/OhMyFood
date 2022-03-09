@@ -17,8 +17,8 @@ h1 {
 .header__arrow {
   position: absolute;
   left: 20px;
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
   top: 50%;
   display: flex;
   align-items: center;
@@ -26,25 +26,32 @@ h1 {
   font-size: 12px;
   color: #000;
 }
-.nom h2 {
-  font-family: "Shrikhand";
-  font-weight: 400;
-  position: relative;
-  height: 27px;
-  background-color: white;
-  border-radius: 10px 10px 0 0;
+.nom {
+  background-color: whitesmoke;
+  h2 {
+    font-family: "Shrikhand";
+    font-weight: 400;
+    position: relative;
+    height: 27px;
+    background-color: whitesmoke;
+    bottom: 40px;
+    padding: 14px 40px;
+    border-radius: 28px;
+  }
 }
 
 .coeur {
   position: relative;
   @include mixins.heart;
+  bottom: 100px;
 }
 
 .menus {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 10px;
   background-color: whitesmoke;
+  margin-top: -45px;
 
   h3 {
     font-family: "Shrikhand";
@@ -172,5 +179,17 @@ h1 {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+.btn-radio {
+  display: none;
+  &:checked ~ label {
+    i {
+      animation: spin 0.5s ease-in;
+    }
+    .menu-item__check {
+      margin-right: 0;
+    }
   }
 }

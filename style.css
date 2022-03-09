@@ -53,12 +53,15 @@ h1 {
 }
 .instructions ol {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 16%;
   gap: 10px;
 }
 @media (max-width: 1000px) {
   .instructions ol {
     flex-direction: column;
+    gap: 10px;
+    margin-left: 0px;
   }
 }
 
@@ -136,13 +139,20 @@ a {
 }
 .restaurants {
   background-color: whitesmoke;
-  margin: 30px;
+  margin: 30px 30px 0 30px;
 }
 .restaurants .restaurants_cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: column;
   gap: 40px;
+}
+@media (min-width: 1000px) {
+  .restaurants .restaurants_cards {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 .restaurants .nouveau {
   position: relative;
@@ -160,12 +170,16 @@ a {
 }
 .restaurants .card {
   height: 60%;
+  margin: 0 10px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 5px 6px -3px #7e7e7e;
 }
 .restaurants .card:hover {
   transform: scale(1.02);
 }
 .restaurants .images {
-  width: 450px;
+  width: 100%;
 }
 .restaurants .images img {
   height: 150px;
@@ -174,18 +188,25 @@ a {
   border-radius: 20px 20px 0 0;
   margin-bottom: 0px;
 }
+@media (min-width: 1000px) {
+  .restaurants .images {
+    width: 450px;
+  }
+}
 .restaurants .description {
   position: relative;
   background-color: white;
+  border-radius: 20px;
 }
 .restaurants .description h3 {
   color: black;
-  margin-bottom: 0px;
-  margin-top: -5px;
+  margin-bottom: 5px;
+  margin-top: 7px;
 }
 .restaurants .description p {
   color: gray;
   margin-top: 0px;
+  margin-bottom: 5px;
   padding: 3px;
 }
 .restaurants .description .form-check i {
@@ -216,6 +237,7 @@ footer {
   background-color: #353535;
   color: white;
   padding: 10px;
+  margin-top: 20px;
 }
 footer h2 {
   font-family: "Shrikhand";
@@ -242,8 +264,8 @@ h1 {
 .header__arrow {
   position: absolute;
   left: 20px;
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
   top: 50%;
   display: flex;
   align-items: center;
@@ -252,17 +274,23 @@ h1 {
   color: #000;
 }
 
+.nom {
+  background-color: whitesmoke;
+}
 .nom h2 {
   font-family: "Shrikhand";
   font-weight: 400;
   position: relative;
   height: 27px;
-  background-color: white;
-  border-radius: 10px 10px 0 0;
+  background-color: whitesmoke;
+  bottom: 40px;
+  padding: 14px 40px;
+  border-radius: 28px;
 }
 
 .coeur {
   position: relative;
+  bottom: 100px;
 }
 .coeur i {
   position: absolute;
@@ -290,9 +318,10 @@ h1 {
 
 .menus {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 10px;
   background-color: whitesmoke;
+  margin-top: -45px;
 }
 .menus h3 {
   font-family: "Shrikhand";
@@ -423,6 +452,16 @@ h1 {
     opacity: 1;
   }
 }
+.btn-radio {
+  display: none;
+}
+.btn-radio:checked ~ label i {
+  animation: spin 0.5s ease-in;
+}
+.btn-radio:checked ~ label .menu-item__check {
+  margin-right: 0;
+}
+
 header {
   box-shadow: 0px 5px 6px lightgrey;
   padding: 3px;
@@ -444,12 +483,6 @@ header {
 h1 {
   font-family: "Shrikhand", cursive;
   text-align: center;
-}
-
-.instructions ol {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
 
 .instructions li {
