@@ -455,10 +455,10 @@ h1 {
 .btn-radio {
   display: none;
 }
-.btn-radio:checked ~ label i {
+.btn-radio:checked + label i {
   animation: spin 0.5s ease-in;
 }
-.btn-radio:checked ~ label .menu-item__check {
+.btn-radio:checked + label .menu-item__check {
   margin-right: 0;
 }
 

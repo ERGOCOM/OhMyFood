@@ -184,7 +184,7 @@ h1 {
 
 .btn-radio {
   display: none;
-  &:checked ~ label {
+  &:checked + label {
     i {
       animation: spin 0.5s ease-in;
     }
