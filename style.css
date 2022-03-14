@@ -1,6 +1,6 @@
 header {
-  box-shadow: 0px 5px 6px lightgrey;
-  padding: 3px;
+  box-shadow: 0px 5px 23px lightgrey;
+  padding: 4px;
 }
 
 h1 {
@@ -19,6 +19,7 @@ h1 {
 .ville h2 {
   text-align: center;
   font-size: 18px;
+  margin-right: 30px;
 }
 .ville i {
   font-size: 15px;
@@ -27,12 +28,13 @@ h1 {
 .selection {
   text-align: center;
   background-color: whitesmoke;
-  padding-bottom: 10px;
+  padding-bottom: 35px;
   padding-top: 10px;
 }
 .selection h2 {
   font-size: 20px;
   margin-top: 0px;
+  flex-wrap: wrap;
 }
 .selection button {
   color: white;
@@ -63,13 +65,24 @@ h1 {
     margin-left: 0px;
   }
 }
+.instructions h2 {
+  text-align: center;
+  font-size: 20px;
+}
+@media (max-width: 1000px) {
+  .instructions h2 {
+    text-align: left;
+    margin-left: 39px;
+  }
+}
 
 li {
   position: relative;
   list-style-type: none;
   background-color: #f2f2f2;
-  padding: 20px 35px;
+  padding: 20px 42px;
   border-radius: 10px;
+  font-size: 19px;
   margin: auto;
   box-shadow: 0px 5px 6px -3px #7e7e7e;
 }
@@ -78,13 +91,13 @@ li::before {
   counter-increment: numero;
   background-color: #9356dc;
   color: white;
-  width: 20px;
-  height: 20px;
+  width: 26px;
+  height: 25px;
   border-radius: 50%;
   display: grid;
   place-items: center;
   position: absolute;
-  left: -7px;
+  left: -11px;
 }
 li:hover {
   transform: scale(1.02);
@@ -138,7 +151,19 @@ a {
 }
 .restaurants {
   background-color: whitesmoke;
-  margin: 30px 30px 0 30px;
+  margin: 30px 25px 0 25px;
+  padding-bottom: 20px;
+}
+.restaurants h2 {
+  font-size: 20px;
+  text-align: center;
+}
+@media (max-width: 1000px) {
+  .restaurants h2 {
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 10px;
+  }
 }
 .restaurants .restaurants_cards {
   display: flex;
@@ -159,13 +184,14 @@ a {
 .restaurants .nouveau::before {
   content: "Nouveau";
   position: absolute;
-  background-color: lightgreen;
-  width: 70px;
-  height: 20px;
+  background-color: #99e2d0;
+  width: 83px;
+  height: 23px;
+  padding-top: 3px;
   text-align: center;
   right: 10px;
   top: 10px;
-  color: black;
+  color: darkslategrey;
 }
 .restaurants .card {
   height: 60%;
@@ -201,12 +227,14 @@ a {
   color: black;
   margin-bottom: 5px;
   margin-top: 7px;
+  margin-left: 7px;
 }
 .restaurants .description p {
   color: gray;
   margin-top: 0px;
   margin-bottom: 5px;
   padding: 3px;
+  margin-left: 10px;
 }
 .restaurants .description .form-check i {
   position: absolute;
@@ -236,12 +264,17 @@ footer {
   background-color: #353535;
   color: white;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 0px;
+  padding-left: 20px;
 }
 footer h2 {
   font-family: "Shrikhand";
   font-weight: 500;
   text-align: left;
+}
+footer a,
+footer i {
+  color: white;
 }
 
 img {
@@ -250,6 +283,11 @@ img {
   height: 50vh;
   object-fit: cover;
   object-position: center;
+}
+@media (max-width: 1000px) {
+  img {
+    height: 30vh;
+  }
 }
 
 header {
@@ -265,16 +303,17 @@ h1 {
   left: 20px;
   height: 40px;
   width: 40px;
-  top: 50%;
+  top: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
+  font-size: 18px;
   color: #000;
 }
 
 .nom {
   background-color: whitesmoke;
+  padding-bottom: 7px;
 }
 .nom h2 {
   font-family: "Shrikhand";
@@ -329,6 +368,7 @@ h1 {
   position: relative;
   height: 24px;
   width: 30px;
+  margin-left: 20px;
   color: gray;
 }
 .menus h3::after {
@@ -348,7 +388,7 @@ h1 {
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
-  margin: 8px;
+  margin: 15px;
   animation: apparition 2s;
   animation-fill-mode: both;
   box-shadow: 0px 5px 6px -3px #7e7e7e;
@@ -463,8 +503,8 @@ h1 {
 }
 
 header {
-  box-shadow: 0px 5px 6px lightgrey;
-  padding: 3px;
+  box-shadow: 0px 5px 23px lightgrey;
+  padding: 4px;
 }
 
 .ville {
@@ -497,11 +537,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h2 {
-  text-align: center;
-  font-size: 18px;
-}
-
 .ville {
   background-color: #ececec;
   padding: 5px;
@@ -518,7 +553,7 @@ h2 {
 .selection {
   text-align: center;
   background-color: whitesmoke;
-  padding-bottom: 10px;
+  padding-bottom: 35px;
   padding-top: 10px;
 }
 

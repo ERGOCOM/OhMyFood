@@ -2,10 +2,15 @@ footer {
   background-color: #353535;
   color: white;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 0px;
+  padding-left: 20px;
   h2 {
     font-family: "Shrikhand";
     font-weight: 500;
     text-align: left;
+  }
+  a,
+  i {
+    color: white;
   }
 }

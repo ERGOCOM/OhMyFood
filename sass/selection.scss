@@ -3,11 +3,12 @@
 .selection {
   text-align: center;
   background-color: whitesmoke;
-  padding-bottom: 10px;
+  padding-bottom: 35px;
   padding-top: 10px;
   h2 {
     font-size: 20px;
     margin-top: 0px;
+    flex-wrap: wrap;
   }
   button {
     @include mixins.btn;
