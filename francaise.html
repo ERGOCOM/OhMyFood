@@ -5,220 +5,168 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-		  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,400&family=Shrikhand&display=swap"
-		  rel="stylesheet"
-		/>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,400&family=Shrikhand&display=swap"rel="stylesheet"/>
 		<title>La palette du gout</title>
-		<link rel="stylesheet" href="style.css" />
-		<script
-		  src="https://kit.fontawesome.com/d21317d11a.js"
-		  crossorigin="anonymous"
-		></script>
+		<link rel="stylesheet" href="style.css"/>
+		<script src="https://kit.fontawesome.com/d21317d11a.js" crossorigin="anonymous"	></script>
 	  </head>
-	<body>
-		<a href="./index.html">
-		<header>
-			<h1>ohmyfood</h1>
-			<i class="fa-arrow-left fas header__arrow" aria-hidden="true"></i>
-		</header>
-		</a>
-		
-		<img src="restaurants/francaise.jpg" alt="resto francaise"/>
-		
-		<main class="nom">
-			<h2>A la française</h2>
-			<section class="coeur">
-			<input id="checkbox" class="btn-check" type="checkbox">
-            <label for="checkbox" class="like">
-              <i class="fas fa-heart"></i>
-              <i class="far fa-heart"></i>    
-            </label>
-			</section>
-
-			<section class="menus">
-
-        <!--Entrées du menu-->
-				<span class="menus__plats">
-					<span class="h3">ENTREES</span>
-					<span class="menu__plats__liste">
-						<input class="btn-radio" id="tartare_poulpe" name="entree" type="radio">
-                            <label for="tartare_poulpe" class="choix">
-						<span class="menu-item">
-							<span class="menu-item__description">
-								<span class="h4">Tartare de poulpe acidulé</span>
-								<span class="p">
-									Aux zests d'orange
+   
+    <body>
+      <a href="./index.html">
+        <header>
+          <h1>ohmyfood</h1>
+          <i class="fa-arrow-left fas header__arrow" aria-hidden="true"></i>
+        </header>
+      </a>
+      <img src="restaurants/francaise.jpg" alt="resto francaise"/>
+      <main class="nom">
+        <h2>A la française</h2>
+        <section class="coeur">
+          <input id="checkbox" class="btn-check" type="checkbox">
+          <label for="checkbox" class="like">
+            <i class="fas fa-heart"></i>
+            <i class="far fa-heart"></i>
+          </label>
+        </section>
+        <section class="menus">
+          <!--Entrées du menu-->
+          <span class="menus__plats">
+            <span class="h3">ENTREES</span>
+            <span class="menu__plats__liste">
+              <input class="btn-radio" id="tartare_poulpe" name="entree" type="radio">
+              <label for="tartare_poulpe" class="choix">
+                <span class="menu-item">
+                  <span class="menu-item__description">
+                    <span class="h4">Tartare de poulpe acidulé</span>
+                    <span class="p">Aux zests d'orange</span>
+                  </span>
+                  <span class="menu-item__prix">25€</span>
+                  <span class="menu-item__check"><i class="fas fa-check"></i></span>
                 </span>
-							</span>
-							<span class="menu-item__prix">25€</span>
-							<span class="menu-item__check">
-								<i class="fas fa-check"></i>
-              </span>
-						</span>
-							</label>
-							<input class="btn-radio" id="veloute_dantan" name="entree" type="radio">
-                            <label for="veloute_dantan" class="choix">
-						<span class="menu-item">
-							<span class="menu-item__description">
-								<span class="h4">Velouté de légumes d'antan</span>
-								<span class="p">
-									Carotte,panais,topinambour
+              </label>
+              <input class="btn-radio" id="veloute_dantan" name="entree" type="radio">
+              <label for="veloute_dantan" class="choix">
+                <span class="menu-item">
+                  <span class="menu-item__description">
+                    <span class="h4">Velouté de légumes d'antan</span>
+                    <span class="p">Carotte,panais,topinambour</span>
+                  </span>
+                  <span class="menu-item__prix">35€</span>
+                  <span class="menu-item__check"><i class="fas fa-check"></i></span>
                 </span>
-							</span>
-							<span class="menu-item__prix">35€</span>
-							<span class="menu-item__check">
-								<i class="fas fa-check"></i>
-              </span>
-						</span>
-							</label>
-
-							<input class="btn-radio" id="soupe_oignon" name="entree" type="radio">
-                            <label for="soupe_oignon" class="choix">
-
-						<span class="menu-item">
-							<span class="menu-item__description">
-								<span class="h4">Soupe à l'oignon</span>
-								<span class="p">
-									Revisitée
+              </label>
+              <input class="btn-radio" id="soupe_oignon" name="entree" type="radio">
+              <label for="soupe_oignon" class="choix">
+                <span class="menu-item">
+                  <span class="menu-item__description">
+                    <span class="h4">Soupe à l'oignon</span>
+                    <span class="p">Revisitée</span>
+                  </span>
+                  <span class="menu-item__prix">20€</span>
+                  <span class="menu-item__check"><i class="fas fa-check"></i></span>
                 </span>
-							</span>
-							<span class="menu-item__prix">20€</span>
-							<span class="menu-item__check">
-								<i class="fas fa-check"></i>
-              </span>
-						</span>
-							</label>
+              </label>
             </span>
           </span>
           <!--Plats du menu-->
-				<span class="menus__plats">
-					<span class ="h3">PLATS</span>
-					<span class="menu__plats__liste">
-						<input class="btn-radio" id="coquilles" name="plat" type="radio">
-                            <label for="coquilles" class="choix">
-						<span class="menu-item">
-							<span class="menu-item__description">
-								<span class="h4">Coquilles Saint-Jacques</span>
-								<span class="p">
-									Accompagnées d'une purée de panais
+          <span class="menus__plats">
+            <span class ="h3">PLATS</span>
+            <span class="menu__plats__liste">
+              <input class="btn-radio" id="coquilles" name="plat" type="radio">
+              <label for="coquilles" class="choix">
+                <span class="menu-item">
+                  <span class="menu-item__description">
+                    <span class="h4">Coquilles Saint-Jacques</span>
+                    <span class="p">Accompagnées d'une purée de panais</span>
+                  </span>
+                  <span class="menu-item__prix">40€</span>
+                  <span class="menu-item__check"><i class="fas fa-check"></i></span>
                 </span>
-							</span>
-							<span class="menu-item__prix">40€</span>
-							<span class="menu-item__check">
-								<i class="fas fa-check"></i>
-              </span>
-						</span>
-							</label>
-							<input class="btn-radio" id="magret_canard" name="plat" type="radio">
-                            <label for="magret_canard" class="choix">
-						<span class="menu-item">
-							<span class="menu-item__description">
-								<span class ="h4">Magret de canard</span>
-								<span class="p">
-								 Et parmentier de pommes de terres
+              </label>
+              <input class="btn-radio" id="magret_canard" name="plat" type="radio">
+              <label for="magret_canard" class="choix">
+                <span class="menu-item">
+                  <span class="menu-item__description">
+                    <span class ="h4">Magret de canard</span>
+                    <span class="p">Et parmentier de pommes de terres</span>
+                  </span>
+                  <span class="menu-item__prix">35€</span>
+                  <span class="menu-item__check"><i class="fas fa-check"></i></span>
                 </span>
-							</span>
-							<span class="menu-item__prix">35€</span>
-							<span class="menu-item__check">
-								<i class="fas fa-check"></i>
-              </span>
-						</span>
-							</label>
-							<input class="btn-radio" id="pigeonneau" name="plat" type="radio">
-							<label for="pigeonneau" class="choix">
-						<span class="menu-item">
-							<span class="menu-item__description">
-								<span class="h4">Pigeonneau d'Ille-de-Vilaine</span>
-								<span class="p">
-									Sur son lit de gnocchis aux légumes
+              </label>
+              <input class="btn-radio" id="pigeonneau" name="plat" type="radio">
+              <label for="pigeonneau" class="choix">
+                <span class="menu-item">
+                  <span class="menu-item__description">
+                    <span class="h4">Pigeonneau d'Ille-de-Vilaine</span>
+                    <span class="p">Sur son lit de gnocchis aux légumes</span>
+                  </span>
+                  <span class="menu-item__prix">44€</span>
+                  <span class="menu-item__check"><i class="fas fa-check"></i></span>
                 </span>
-							</span>
-							<span class="menu-item__prix">44€</span>
-							<span class="menu-item__check">
-								<i class="fas fa-check"></i>
-							</span>
-						</span>
-							</label>
+              </label>
             </span>
           </span>
           <!--Desserts du menu-->
-				<span class="menus__plats">
-					<span class="h3">DESSERTS</span>
-					<span class="menu__plats__liste">
-						<input class="btn-radio" id="petales_violettes" name="dessert" type="radio">
-                            <label for="petales_violettes" class="choix">
-
-						<span class=" menu-item">
-							<span class="menu-item__description">
-								<span class ="h4">Pétales de violettes glacés</span>
-								<span class="p">
-									Et purée de noisettes
+          <span class="menus__plats">
+            <span class="h3">DESSERTS</span>
+            <span class="menu__plats__liste">
+              <input class="btn-radio" id="petales_violettes" name="dessert" type="radio">
+              <label for="petales_violettes" class="choix">
+                <span class=" menu-item">
+                  <span class="menu-item__description">
+                    <span class ="h4">Pétales de violettes glacés</span>
+                    <span class="p">Et purée de noisettes</span>
+                  </span>
+                  <span class="menu-item__prix">18€</span>
+                  <span class="menu-item__check"><i class="fas fa-check"></i></span>
                 </span>
-							</span>
-							<span class="menu-item__prix">18€</span>
-							<span class="menu-item__check">
-								<i class="fas fa-check"></i>
-              </span>
-						</span>
-							</label>
-							<input class="btn-radio" id="fondant_chocolat" name="dessert" type="radio">
-                            <label for="fondant_chocolat" class="choix">
-
-						<span class="menu-item">
-							<span class="menu-item__description">
-								<span class="h4">Fondant au chocolat</span>
-								<span class="p">
-									Revisité
+              </label>
+              <input class="btn-radio" id="fondant_chocolat" name="dessert" type="radio">
+              <label for="fondant_chocolat" class="choix">
+                <span class="menu-item">
+                  <span class="menu-item__description">
+                    <span class="h4">Fondant au chocolat</span>
+                    <span class="p">Revisité</span>
+                  </span>
+                  <span class="menu-item__prix">22€</span>
+                  <span class="menu-item__check"><i class="fas fa-check"></i></span>
                 </span>
-							</span>
-							<span class="menu-item__prix">22€</span>
-							<span class="menu-item__check">
-								<i class="fas fa-check"></i>
-              </span>
-						</span>
-							</label>
-							<input class="btn-radio" id="millefeuille" name="dessert" type="radio">
-                            <label for="millefeuille" class="choix">
-
-						<span class="menu-item">
-							<span class="menu-item__description">
-								<span class="h4">Millefeuille croustillantt</span>
-								<span class="p">
-									Myrtilles et pâte d'amande
+              </label>
+              <input class="btn-radio" id="millefeuille" name="dessert" type="radio">
+              <label for="millefeuille" class="choix">
+                <span class="menu-item">
+                  <span class="menu-item__description">
+                    <span class="h4">Millefeuille croustillantt</span>
+                    <span class="p">Myrtilles et pâte d'amande</span>
+                  </span>
+                  <span class="menu-item__prix">23€</span>
+                  <span class="menu-item__check"><i class="fas fa-check"></i></span>
                 </span>
-							</span>
-							<span class="menu-item__prix">23€</span>
-							<span class="menu-item__check">
-								<i class="fas fa-check"></i>
-              </span>
-						</span>
-							</label>
+              </label>
             </span>
           </span>
-			</section>
-      <!--Command button-->
-			<section class="order">
-				<button>Commander</button>
-			</section>
-		</main>
-    <!--Footer-->
-		<footer>
-			<h2>ohmyfood</h2>
-			<h3>
-				<i class="fas fa-utensils"></i>
-				Proposer un restaurant
-      </h3>
-			<p>
-				<i class="fas fa-hands-helping"></i>
-				Devenir partenaire
-			</p>
-			<p>
-				Mentions légales
-			</p>
-			<p>
-				<a href="#">Contact</a>
-			</p>
-		</footer>
-	</body>
-</html>
+        </section>
+        <!--Command button-->
+        <section class="order">
+          <button>Commander</button>
+        </section>
+      </main>
+      <!--Footer-->
+      <footer>
+        <h2>ohmyfood</h2>
+        <h3><i class="fas fa-utensils"></i>Proposer un restaurant</h3>
+        <p>
+          <i class="fas fa-hands-helping"></i>
+          Devenir partenaire
+        </p>
+        <p>
+          Mentions légales
+        </p>
+        <p>
+          <a href="mailto:coline.miclard@hotmail.fr">Contact</a>
+        </p>
+      </footer>
+    </body>
+    </html>
+    

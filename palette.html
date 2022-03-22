@@ -5,220 +5,168 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-		  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,400&family=Shrikhand&display=swap"
-		  rel="stylesheet"
-		/>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,400&family=Shrikhand&display=swap" rel="stylesheet"/>
 		<title>La palette du gout</title>
 		<link rel="stylesheet" href="style.css" />
-		<script
-		  src="https://kit.fontawesome.com/d21317d11a.js"
-		  crossorigin="anonymous"
-		></script>
-	  </head>
+		<script src="https://kit.fontawesome.com/d21317d11a.js" crossorigin="anonymous"></script>
+	</head>
+
 	<body>
 		<a href="./index.html">
 		<header>
 			<h1>ohmyfood</h1>
 			<i class="fa-arrow-left fas header__arrow" aria-hidden="true"></i>
 		</header>
-		</a>
-		
-		<img src="restaurants/palette.jpg" alt="resto palette"/>
-		
-		<main class="nom">
-			<h2>La palette du goût</h2>
-			<section class="coeur">
+	</a>
+	<img src="restaurants/palette.jpg" alt="resto palette"/>
+	<main class="nom">
+		<h2>La palette du goût</h2>
+		<section class="coeur">
 			<input id="checkbox" class="btn-check" type="checkbox">
-            <label for="checkbox" class="like">
-              <i class="fas fa-heart"></i>
-              <i class="far fa-heart"></i>    
-            </label>
-			</section>
-
-			<section class="menus">
-				<!--Entrées du menu-->
-				<span class="menus__plats">
-					<span class="h3">ENTREES</span>
-					<span class="menu__plats__liste">
-						<input class="btn-radio" id="fricassee_escargot" name="entree" type="radio">
-                            <label for="fricassee_escargot" class="choix">
+			<label for="checkbox" class="like">
+				<i class="fas fa-heart"></i>
+				<i class="far fa-heart"></i>
+			</label>
+		</section>
+		<section class="menus">
+			<!--Entrées du menu-->
+			<span class="menus__plats">
+				<span class="h3">ENTREES</span>
+				<span class="menu__plats__liste">
+					<input class="btn-radio" id="fricassee_escargot" name="entree" type="radio">
+					<label for="fricassee_escargot" class="choix">
 						<span class="menu-item">
 							<span class="menu-item__description">
 								<span class="h4">Fricassée d'escargot</span>
-								<span class="p">
-									Au piment d'espelette
-								</span>
+								<span class="p">Au piment d'espelette</span>
 							</span>
 							<span class="menu-item__prix">25€</span>
-							<span class="menu-item__check">
-								<i class="fas fa-check"></i>
-							</span>
+							<span class="menu-item__check"><i class="fas fa-check"></i></span>
 						</span>
-							</label>
-							<input class="btn-radio" id="foie_canard" name="entree" type="radio">
-                            <label for="foie_canard" class="choix">
+					</label>
+					<input class="btn-radio" id="foie_canard" name="entree" type="radio">
+					<label for="foie_canard" class="choix">
 						<span class="menu-item">
 							<span class="menu-item__description">
 								<span class="h4">Foie gras de canard mi-cuit</span>
-								<span class="p">
-									Et ses copeaux de truffe noire
-								</span>
+								<span class="p">Et ses copeaux de truffe noire</span>
 							</span>
 							<span class="menu-item__prix">35€</span>
-							<span class="menu-item__check">
-								<i class="fas fa-check"></i>
-							</span>
+							<span class="menu-item__check"><i class="fas fa-check"></i></span>
 						</span>
-							</label>
-
-							<input class="btn-radio" id="oeuf_plat" name="entree" type="radio">
-                            <label for="oeuf_plat" class="choix">
-
+					</label>
+					<input class="btn-radio" id="oeuf_plat" name="entree" type="radio">
+					<label for="oeuf_plat" class="choix">
 						<span class="menu-item">
 							<span class="menu-item__description">
 								<span class="h4">Oeuf au plat</span>
-								<span class="p">
-									Assaisonné à la truffe sur lit de poireaux
-								</span>
+								<span class="p">Assaisonné à la truffe sur lit de poireaux</span>
 							</span>
 							<span class="menu-item__prix">20€</span>
-							<span class="menu-item__check">
-								<i class="fas fa-check"></i>
-							</span>
+							<span class="menu-item__check"><i class="fas fa-check"></i></span>
 						</span>
-							</label>
-						</span>
-					</span>
-					<!--Plats du menu-->
-				<span class="menus__plats">
-					<span class="h3">PLATS</span>
-					<span class="menu__plats__liste">
-						<input class="btn-radio" id="filet_boeuf" name="plat" type="radio">
-                            <label for="filet_boeuf" class="choix">
+					</label>
+				</span>
+			</span>
+			<!--Plats du menu-->
+			<span class="menus__plats">
+				<span class="h3">PLATS</span>
+				<span class="menu__plats__liste">
+					<input class="btn-radio" id="filet_boeuf" name="plat" type="radio">
+					<label for="filet_boeuf" class="choix">
 						<span class="menu-item">
 							<span class="menu-item__description">
 								<span class="h4">Filet de boeuf aux herbes</span>
-								<span class="p">
-									Accompagné de sa ribambelle de légumes
-								</span>
+								<span class="p">Accompagné de sa ribambelle de légumes</span>
 							</span>
 							<span class="menu-item__prix">40€</span>
-							<span class="menu-item__check">
-								<i class="fas fa-check"></i>
-							</span>
+							<span class="menu-item__check"><i class="fas fa-check"></i></span>
 						</span>
-							</label>
-							<input class="btn-radio" id="parmentier_boeuf" name="plat" type="radio">
-                            <label for="parmentier_boeuf" class="choix">
+					</label>
+					<input class="btn-radio" id="parmentier_boeuf" name="plat" type="radio">
+					<label for="parmentier_boeuf" class="choix">
 						<span class="menu-item">
 							<span class="menu-item__description">
 								<span class="h4">Parmentier de queue de boeuf</span>
-								<span class="p">
-									A la truffe noire sur sa purée de panais
-								</span>
+								<span class="p">A la truffe noire sur sa purée de panais</span>
 							</span>
 							<span class="menu-item__prix">35€</span>
-							<span class="menu-item__check">
-								<i class="fas fa-check"></i>
-							</span>
+							<span class="menu-item__check"><i class="fas fa-check"></i></span>
 						</span>
-							</label>
-							<input class="btn-radio" id="filet_turbo" name="plat" type="radio">
-							<label for="filet_turbo" class="choix">
-
+					</label>
+					<input class="btn-radio" id="filet_turbo" name="plat" type="radio">
+					<label for="filet_turbo" class="choix">
 						<span class="menu-item">
 							<span class="menu-item__description">
 								<span class="h4">Filet de Turbot</span>
-								<span class="p">
-									Aux agrumes
-								</span>
+								<span class="p">Aux agrumes</span>
 							</span>
 							<span class="menu-item__prix">44€</span>
-							<span class="menu-item__check">
-								<i class="fas fa-check"></i>
-							</span>
+							<span class="menu-item__check"><i class="fas fa-check"></i></span>
 						</span>
-							</label>
-						</span>
-					</span>
-					<!--Desserts du menu-->
-				<span class="menus__plats">
-					<span class="h3">DESSERTS</span>
-					<span class="menu__plats__liste">
-						<input class="btn-radio" id="paris_brest" name="dessert" type="radio">
-                            <label for="paris_brest" class="choix">
-
+					</label>
+				</span>
+			</span>
+			<!--Desserts du menu-->
+			<span class="menus__plats">
+				<span class="h3">DESSERTS</span>
+				<span class="menu__plats__liste">
+					<input class="btn-radio" id="paris_brest" name="dessert" type="radio">
+					<label for="paris_brest" class="choix">
 						<span class=" menu-item">
 							<span class="menu-item__description">
 								<span class="h4">Paris-Brest</span>
-								<span class="p">
-									Revisité
-								</span>
+								<span class="p">Revisité</span>
 							</span>
 							<span class="menu-item__prix">18€</span>
-							<span class="menu-item__check">
-								<i class="fas fa-check"></i>
-							</span>
+							<span class="menu-item__check"><i class="fas fa-check"></i></span>
 						</span>
-							</label>
-							<input class="btn-radio" id="macaron_chocolat" name="dessert" type="radio">
-                            <label for="macaron_chocolat" class="choix">
-
+					</label>
+					<input class="btn-radio" id="macaron_chocolat" name="dessert" type="radio">
+					<label for="macaron_chocolat" class="choix">
 						<span class="menu-item">
 							<span class="menu-item__description">
 								<span class="h4">Macaron au chocolat d'exception</span>
-								<span class="p">
-									Et glace à la vanille de Madagascar
-								</span>
+								<span class="p">Et glace à la vanille de Madagascar</span>
 							</span>
 							<span class="menu-item__prix">22€</span>
-							<span class="menu-item__check">
-								<i class="fas fa-check"></i>
-							</span>
+							<span class="menu-item__check"><i class="fas fa-check"></i></span>
 						</span>
-							</label>
-							<input class="btn-radio" id="mousse_chocolat" name="dessert" type="radio">
-                            <label for="mousse_chocolat" class="choix">
-
+					</label>
+					<input class="btn-radio" id="mousse_chocolat" name="dessert" type="radio">
+					<label for="mousse_chocolat" class="choix">
 						<span class="menu-item">
 							<span class="menu-item__description">
 								<span class="h4">Mousse au chocolat</span>
-								<span class="p">
-									Au piment d'espelette et à la truffe noire
-								</span>
+								<span class="p">Au piment d'espelette et à la truffe noire</span>
 							</span>
 							<span class="menu-item__prix">23€</span>
-							<span class="menu-item__check">
-								<i class="fas fa-check"></i>
-							</span>
+							<span class="menu-item__check"><i class="fas fa-check"></i></span>
 						</span>
-							</label>
-						</span>
-					</span>
-			</section>
-			<!--Command button-->
-			<section class="order">
-				<button>Commander</button>
-			</section>
-		</main>
-		<!--Footer-->
-		<footer>
-			<h2>ohmyfood</h2>
-			<h3>
-				<i class="fas fa-utensils"></i>
-				Proposer un restaurant
-			</h3>
-			<p>
-				<i class="fas fa-hands-helping"></i>
-				Devenir partenaire
-			</p>
-			<p>
-				Mentions légales
-			</p>
-			<p>
-				<a href="#">Contact</a>
-			</p>
-		</footer>
+					</label>
+				</span>
+			</span>
+		</section>
+		<!--Command button-->
+		<section class="order">
+			<button>Commander</button>
+		</section>
+	</main>
+	<!--Footer-->
+	<footer>
+		<h2>ohmyfood</h2>
+		<h3><i class="fas fa-utensils"></i>Proposer un restaurant</h3>
+		<p>
+			<i class="fas fa-hands-helping"></i>
+			Devenir partenaire
+		</p>
+		<p>
+			Mentions légales
+		</p>
+		<p>
+			<a href="mailto:coline.miclard@hotmail.fr">Contact</a>
+		</p>
+	</footer>
 	</body>
-</html>
+	</html>
+	
