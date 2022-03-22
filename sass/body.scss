@@ -15,10 +15,10 @@ a {
   position: fixed;
   inset: 0;
   z-index: 1;
-  animation: blanc 200ms 4s forwards;
+  animation: blanc 200ms 1s forwards;
   transform-origin: top;
   i {
-    animation: rotation 4s infinite linear;
+    animation: rotation 2s infinite linear;
     font-size: 60px;
     color: #9356dc;
   }

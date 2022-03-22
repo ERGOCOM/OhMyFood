@@ -107,6 +107,9 @@ i {
   margin-right: 10px;
   color: gray;
 }
+i:hover {
+  color: #9356dc;
+}
 
 span {
   font-size: 20px;
@@ -135,11 +138,11 @@ a {
   position: fixed;
   inset: 0;
   z-index: 1;
-  animation: blanc 200ms 4s forwards;
+  animation: blanc 200ms 1s forwards;
   transform-origin: top;
 }
 .loader i {
-  animation: rotation 4s infinite linear;
+  animation: rotation 2s infinite linear;
   font-size: 60px;
   color: #9356dc;
 }
@@ -473,16 +476,16 @@ h1 {
   flex-shrink: 0;
   border-radius: 0 10px 10px 0;
   background-color: #99e2d0;
-  margin-right: -40px;
-  width: 40px;
+  margin-right: -70px;
+  width: 70px;
   transition: margin-right 0.5s;
 }
 .menus .menu-item__check i {
   display: grid;
   place-items: center;
   background: white;
-  height: 20px;
-  width: 20px;
+  height: 24px;
+  width: 24px;
   border-radius: 20px;
   color: #99e2d0;
   margin-right: 1px;
