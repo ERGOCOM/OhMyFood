@@ -18,5 +18,8 @@ footer {
   a,
   i {
     color: white;
+      &:hover {
+        color: green;
+      }
   }
 }

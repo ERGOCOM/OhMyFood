@@ -53,6 +53,9 @@ h1 {
 .instructions {
   counter-reset: numero;
 }
+
+
+
 .instructions ol {
   display: flex;
   flex-direction: row;
